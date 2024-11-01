@@ -1,0 +1,119 @@
+body, html { 
+    margin: 0;
+    padding: 0;
+}
+
+p, a {
+    padding: 20px 0;
+}
+
+a {
+    display: block;
+}
+
+div {
+    text-align: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(171, 182, 255);
+}
+
+p,h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+div > p {
+    background-color: yellow;
+    z-index: 2;
+}
+
+div strong {
+    display: block;
+    background-color: chocolate;
+}   
+
+.class-selector {
+    background-color: green;
+}
+
+#id-selector {
+    background-color: chartreuse;
+}
+
+.fourth-selector {
+    display: flex;
+    background-color: rgb(138, 92, 255);
+}
+
+input[placeholder^="Content"] {
+    background-color: black;
+    color: white;
+}
+
+div.fifth-selector > p {
+    background-color: darkorange;
+}
+
+div.fifth-selector > div > p {
+    background-color: crimson;
+}
+
+.fifth-selector div .go-in p {
+    background-color: blue;
+}
+
+.sixth-selector p {
+    background-color: aquamarine;
+}
+
+div.seventh-selector p:first-child {
+    background-color: darkgoldenrod;
+}
+
+div.seventh-selector div > a:first-child {
+    background-color: darkgreen;
+}
+
+div.seventh-selector div > strong {
+    background-color: cyan;
+    display: block;
+    padding: 20px 0;
+}
+
+div.seventh-selector p ~ a {
+    background-color: blueviolet;
+}
+
+div.seventh-selector a ~ em {
+    background-color: hotpink;
+    padding: 30px 0;
+    display: block;
+}
+
+div.seventh-selector em ~ a {
+    background-color: darkred;
+}
+
+div.seventh-selector div > p {
+    background-color: rgb(92, 84, 41);
+    padding: 20px 0;
+}
+
+div.eight-selector > div #included a[href^="https"] {
+    background-color:rgb(99, 42, 42);
+}
+
+div.eight-selector > div em {
+    background-color: lawngreen;
+    display: block;
+}
+
+div.eight-selector div > a {
+    background-color: rgb(0, 53, 105);
+}

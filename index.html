@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!--3 - selector with priority 2-->
+        <div>
+            <p>Используется до тега p, вложенный в div, в первом уровне, прайорити 2</p>
+        </div>
+        <div class="content">
+            <!--4.1 - tag selector-->
+            <div>
+                <strong>Sweets</strong>
+            </div>
+            <!--4.2 - class selector-->
+            <div class="second-selector">
+                <p class="class-selector">Books</p>
+            </div>
+            <!--4.3 - id selector-->
+            <p id="id-selector">Food</p>
+            <!--4.4 - artibut selector-->
+            <div class="fourth-selector">
+                <input type="text" placeholder="Content here...">
+                <input type="password" placeholder="Password...">
+            </div>
+            <!--4.5 - included selector-->
+            <div class="fifth-selector">
+                <p>Not what we searching</p>
+                <div>
+                    <p>Not what we searching</p>
+                    <div class="go-in">
+                        <p>We Here</p>
+                    </div>
+                </div>
+            </div>
+            <!--4.6 - child selector-->
+            <div class="sixth-selector">
+                <p>
+                    <a href="#">Not what we searching</a>
+                </p>
+                <div>
+                    <strong>
+                        <a href="#">This one</a>
+                    </strong>
+                </div>
+            </div>
+            <!--4.7 - selectors queue-->
+            <div class="seventh-selector">
+                <p>
+                    <a href="#">Not what we searching</a>
+                </p>
+                <div>
+                    <a href="#">Not what we searching</a>
+                    <strong>This will be styled later</strong>
+                    <p>Other a tags will be styled</p>
+                    <a href="#">Styled</a>
+                    <em>Some text</em>
+                    <a href="#">Styled</a>
+                </div>
+            </div>
+            <!--4.8 - selectors combination-->
+            <div class="eight-selector">
+                <div>
+                    <a href="#">Something Else</a>
+                    <div>
+                        <em>Something</em>
+                        <div id="included">
+                            <a href="https://www.google.com/">Google Button</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
